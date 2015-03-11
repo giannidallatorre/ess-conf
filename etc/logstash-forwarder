@@ -1,0 +1,16 @@
+{
+  "network": {
+    "servers": [ "EDIT-logstash-server-FQDN:5000" ],
+    "timeout": 15,
+    "ssl ca": "/etc/grid-security/certificates/igi-test-ca.pem"
+  },
+  "files": [
+    {
+      "paths": [
+        "/var/log/EDIT-path-of-the-log-to-forward",
+        "/var/log/EDIT-path-of-the-log2-to-forward",
+       ],
+      "fields": { "type": "EDIT-define-a-significative-type" }
+    }
+   ]
+}
